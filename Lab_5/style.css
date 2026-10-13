@@ -1,21 +1,20 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f7f9;
-    color: #333;
+    background-color: #2f3640;
+    color: #f5f6fa;
     padding: 20px;
     line-height: 1.5;
 }
 
 .container {
-    background: #ffffff;
+    background: #353b48;
     padding: 25px;
     margin-bottom: 30px;
     border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
     max-width: 800px;
 }
 
-/* Форма валідації */
 .form-wrapper {
     display: flex;
     gap: 30px;
@@ -36,26 +35,28 @@ body {
     margin-bottom: 5px;
     font-weight: bold;
     font-size: 14px;
+    color: #f5f6fa;
 }
 
 .form-group input {
     width: 100%;
     padding: 10px;
-    border: 2px solid #ccc;
+    border: 2px solid #718093;
+    background-color: #2f3640;
+    color: #f5f6fa;
     border-radius: 4px;
     box-sizing: border-box;
     transition: border-color 0.3s;
 }
 
-/* Виділення помилок */
 .form-group.invalid input {
-    border-color: #e74c3c;
-    background-color: #fdf2f2;
+    border-color: #e84118;
+    background-color: #481f1d;
 }
 
 .error-msg {
     display: none;
-    color: #e74c3c;
+    color: #e84118;
     font-size: 12px;
     margin-top: 4px;
 }
@@ -66,7 +67,7 @@ body {
 
 #btn-submit {
     padding: 12px 24px;
-    background-color: #2ec153;
+    background-color: #44bd32;
     color: white;
     border: none;
     border-radius: 4px;
@@ -76,16 +77,15 @@ body {
 }
 
 #btn-submit:hover {
-    background-color: #27ae60;
+    background-color: #4cd137;
 }
 
-/* Блок результату */
 .result-card {
     flex: 1;
     min-width: 280px;
     padding: 20px;
-    background: #eef9f1;
-    border: 2px solid #2ecc71;
+    background: #1e3799;
+    border: 2px solid #00a8ff;
     border-radius: 6px;
 }
 
@@ -93,7 +93,6 @@ body {
     display: none;
 }
 
-/* Інтерактивна таблиця */
 .picker-wrapper {
     margin-bottom: 15px;
     font-weight: bold;
@@ -107,12 +106,13 @@ body {
 #interactive-table td {
     width: 50px;
     height: 50px;
-    border: 2px solid #333;
+    border: 2px solid #718093;
     text-align: center;
     font-weight: bold;
     font-size: 16px;
     cursor: pointer;
     user-select: none;
-    background-color: #ffffff;
+    background-color: #353b48;
+    color: #f5f6fa;
     transition: background-color 0.2s;
 }

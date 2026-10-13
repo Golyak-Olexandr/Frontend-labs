@@ -1,0 +1,105 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #2f3640;
+    color: #f5f6fa;
+    padding: 20px;
+    margin: 0;
+}
+
+h1, p {
+    text-align: center;
+}
+
+.controls {
+    text-align: center;
+    margin: 25px 0;
+}
+
+#btn-download {
+    padding: 12px 28px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #44bd32;
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+#btn-download:hover {
+    background-color: #4cd137;
+}
+
+#btn-download:active {
+    transform: scale(0.97);
+}
+
+.status {
+    display: block;
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    min-height: 24px;
+}
+
+.status.success {
+    color: #4cd137;
+}
+
+.status.error {
+    color: #e84118;
+}
+
+/* Сітка з картками користувачів */
+.users-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.user-card {
+    background-color: #353b48;
+    border: 1px solid #718093;
+    border-radius: 8px;
+    width: 220px;
+    padding: 15px;
+    box-sizing: border-box;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    transition: transform 0.2s ease;
+}
+
+.user-card:hover {
+    transform: translateY(-5px);
+}
+
+.user-card img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #00a8ff;
+    margin-bottom: 12px;
+}
+
+.user-card h3 {
+    margin: 10px 0;
+    font-size: 18px;
+    color: #00a8ff;
+}
+
+.user-card p {
+    margin: 6px 0;
+    font-size: 14px;
+    text-align: left;
+    word-break: break-word;
+    color: #dcdde1;
+}
+
+.user-card strong {
+    color: #f5f6fa;
+}

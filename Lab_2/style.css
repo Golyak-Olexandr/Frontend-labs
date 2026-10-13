@@ -2,27 +2,26 @@
 body {
     font-family: Arial, sans-serif;
     padding: 20px;
-    background-color: #f9f9f9;
-    color: #333;
+    background-color: #2f3640;
+    color: #f5f6fa;
 }
 
 h1, h2, h3 {
     margin-top: 20px;
+    color: #f5f6fa;
 }
 
-/* ==========================================
-   Завдання 1. Таблиця (Варіант 4)
-   ========================================== */
+/* Таблиця */
 .custom-table {
     border-collapse: collapse;
     width: 100%;
     max-width: 700px;
     margin-bottom: 40px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
 
 .custom-table td {
-    border: 2px solid #333333;
+    border: 2px solid #718093;
     padding: 15px 20px;
     text-align: center;
     font-weight: bold;
@@ -30,31 +29,21 @@ h1, h2, h3 {
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-/* 
-   Рядок 1: #nn8f8f -> #048f8f
-   Контрастний колір тексту: #ffffff
-*/
 .custom-table .row-1 {
     background-color: #048f8f;
     color: #ffffff;
 }
 
-/* 
-   Рядок 2: #f5f5nn -> #f5f504
-   Контрастний колір тексту: #111111
-*/
 .custom-table .row-2 {
     background-color: #f5f504;
     color: #111111;
 }
 
-/* Рядок 3 (нейтральний) */
 .custom-table .row-3 {
-    background-color: #e0e0e0;
-    color: #222222;
+    background-color: #353b48;
+    color: #f5f6fa;
 }
 
-/* Hover: кольори 1 і 2 рядків міняються місцями */
 .custom-table .row-1:hover {
     background-color: #f5f504;
     color: #111111;
@@ -65,16 +54,15 @@ h1, h2, h3 {
     color: #ffffff;
 }
 
-/* ==========================================
-   Завдання 2. Малювання прицілу (Варіант 4)
-   ========================================== */
+/* Контейнер прицілу */
 .target-container {
     position: relative;
     width: 220px;
     height: 220px;
     margin-bottom: 30px;
-    background-color: #ffffff;
-    border: 1px solid #ddd;
+    background-color: #353b48;
+    border: 1px solid #718093;
+    border-radius: 8px;
 }
 
 /* ------------------------------------------
