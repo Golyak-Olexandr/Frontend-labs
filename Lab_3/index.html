@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Голяк О. Ю. | гр. ІП-45 | ЛР №3 | Варіант 4</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Лабораторна робота №3</h1>
+    <p><strong>Виконав:</strong> Голяк Олександр Юрійович (гр. ІП-45), Варіант 4</p>
+
+    <!-- ==========================================
+         ЗАВДАННЯ 1: Верстка через FLOAT
+         ========================================== -->
+    <section class="demo-section">
+        <h2>Завдання 1. Блочна верстка макету за допомогою Float</h2>
+        
+        <div class="layout-container float-layout">
+            <!-- Верхній рядок: Img (ліворуч) + Text (праворуч) -->
+            <div class="float-row clearfix">
+                <div class="block block-img img-top-left">
+                    <h3>Зображення</h3>
+                    <p>[ Постер / Картка ]</p>
+                </div>
+                <div class="block block-text text-top-right">
+                    <h3>Опис проекту</h3>
+                    <p>
+                        Розробка сучасних веб-інтерфейсів вимагає глибокого розуміння структури HTML5 та можливостей стилізації за допомогою CSS3. Блочна верстка дозволяє гнучко розміщувати елементи на сторінці.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Середній рядок: Img на всю ширину -->
+            <div class="float-row clearfix">
+                <div class="block block-img img-middle-full">
+                    <h3>Головний банер / Промо-зображення</h3>
+                </div>
+            </div>
+
+            <!-- Нижній рядок: Text на всю ширину -->
+            <div class="float-row clearfix">
+                <div class="block block-text text-bottom-full">
+                    <h3>Додаткова інформація</h3>
+                    <p>
+                        Кафедра інформаційних систем та технологій ФІОТ КПІ ім. Ігоря Сікорського. Курс «Основи FE-технологій», 2026 рік.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================
+         ЗАВДАННЯ 2: Верстка через FLEXBOX
+         ========================================== -->
+    <section class="demo-section">
+        <h2>Завдання 2. Блочна верстка макету за допомогою Flexbox</h2>
+        
+        <div class="layout-container flex-layout">
+            <!-- Верхній рядок -->
+            <div class="flex-row">
+                <div class="block block-img flex-img-left">
+                    <h3>Зображення</h3>
+                    <p>[ Постер / Картка ]</p>
+                </div>
+                <div class="block block-text flex-text-right">
+                    <h3>Опис проекту</h3>
+                    <p>
+                        Використання Flexbox значно спрощує вирівнювання блоків по горизонталі та вертикалі, автоматично розподіляючи вільний простір контейнера між його елементами.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Середній рядок -->
+            <div class="flex-row">
+                <div class="block block-img flex-img-full">
+                    <h3>Головний банер / Промо-зображення</h3>
+                </div>
+            </div>
+
+            <!-- Нижній рядок -->
+            <div class="flex-row">
+                <div class="block block-text flex-text-full">
+                    <h3>Додаткова інформація</h3>
+                    <p>
+                        Кафедра інформаційних систем та технологій ФІОТ КПІ ім. Ігоря Сікорського. Курс «Основи FE-технологій», 2026 рік.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
