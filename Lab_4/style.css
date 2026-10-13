@@ -1,0 +1,77 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #f9f9f9;
+    color: #333333;
+    line-height: 1.6;
+}
+
+.clickable-element {
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border: 1px dashed #bbb;
+}
+
+.clickable-element:hover {
+    border-color: #007bff;
+}
+
+/* Стилі для панелі кнопок під зображенням */
+.image-container {
+    margin-top: 20px;
+}
+
+#city-image {
+    transition: width 0.3s ease;
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.buttons-panel {
+    margin-top: 15px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.buttons-panel button {
+    padding: 10px 18px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.buttons-panel button:hover {
+    background-color: #0056b3;
+}
+
+.buttons-panel button:active {
+    transform: scale(0.97);
+}
+
+#btn-delete {
+    background-color: #dc3545;
+}
+
+#btn-delete:hover {
+    background-color: #bd2130;
+}
+
+#btn-add {
+    background-color: #28a745;
+}
+
+#btn-add:hover {
+    background-color: #218838;
+}

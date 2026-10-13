@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Олександр Голяк, ІП-45, КПІ, ФІОТ, Житомир, FE-технології, Лабораторна робота 4">
+    <meta name="description" content="Персональна сторінка студента групи ІП-45 Голяка Олександра з курсу Основи FE-технологій (ЛР №4)">
+    <title>Голяк О. Ю. | гр. ІП-45 | ЛР №4 | Варіант 4</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Елемент 1 (H2) -->
+    <h2 id="elem-1">Голяк Олександр Юрійович</h2>
+
+    <!-- Елемент 2 (P) -->
+    <p id="elem-2">
+        Народився в місті Житомир. З дитинства захоплююся точними науками, комп'ютерною технікою, розробкою програмного забезпечення та новинками в сфері відеоігор.
+    </p>
+
+    <!-- Елемент 3 (P) -->
+    <p id="elem-3">
+        Освіта: здобув загальну середню освіту в ліцеї №19 м. Житомира, який закінчив із золотою медаллю. Наразі навчаюся в Національному технічному університеті України «Київський політехнічний інститут імені Ігоря Сікорського» на факультеті інформатики та обчислювальної техніки (ФІОТ).
+    </p>
+
+    <!-- Елемент 4 (Блок хобі) -->
+    <div id="elem-4">
+        <h3>Мої хобі:</h3>
+        <ul>
+            <li>
+                <strong>Комп'ютерні відеоігри різних жанрів:</strong>
+                <ul>
+                    <li>Souls-like / Action-Adventure: <em>Hollow Knight</em>, <em>God of War</em>, <em>God of War Ragnarök</em></li>
+                    <li>Survival-ігри (виживачі): <em>Valheim</em>, <em>Subnautica</em> та інші</li>
+                    <li>RPG: <em>The Witcher 3: Wild Hunt</em>, <em>Cyberpunk 2077</em></li>
+                </ul>
+            </li>
+            <li>Програмування, проектування баз даних та веб-розробка</li>
+            <li>Читання ранобе, манґи та корисної технічної літератури</li>
+        </ul>
+    </div>
+
+    <!-- Елемент 5 (Завдання 1: target via getElementById) -->
+    <div id="elem-5" class="clickable-element">
+        <h3>Улюблені анімаційні серіали, аніме та ранобе (Клікніть мене - getElementById):</h3>
+        <ol>
+            <li>Анімаційні серіали: «Аватар: Легенда про Аанга» / «Легенда про Корру»</li>
+            <li>Аніме-серіали: «Кіберпанк: Ті, що біжать по краю» (Cyberpunk: Edgerunners), «Зошит смерті» (Death Note), «Доктор Стоун» (Dr. Stone)</li>
+            <li>Ранобе: «Реінкарнація безробітного» (Mushoku Tensei)</li>
+        </ol>
+    </div>
+
+    <!-- Елемент 6 (Завдання 1: target via querySelector) -->
+    <h3 id="elem-6" class="clickable-element element-6-target">Улюблене місто (Клікніть мене - querySelector):</h3>
+
+    <!-- Елемент 7 (P) -->
+    <p id="elem-7">
+        Житомир — рідне та одне з найзатишніших міст України з багатою історією, мальовничими парками, знаменитим підвісним мостом через річку Тетерів у парку Шодуара та спокійною гармонійною атмосферою.
+    </p>
+
+    <!-- Завдання 2: Зображення та кнопки керування -->
+    <div class="image-container" id="img-wrapper">
+        <p id="image-paragraph">
+            <a href="https://zt-rada.gov.ua" target="_blank" rel="noopener noreferrer" id="img-link">
+                <img src="zhytomyr.jpg" alt="Підвісний міст у Житомирі" id="city-image" width="600">
+            </a>
+        </p>
+        <div class="buttons-panel">
+            <button id="btn-add">Додати</button>
+            <button id="btn-increase">Збільшити</button>
+            <button id="btn-decrease">Зменшити</button>
+            <button id="btn-delete">Видалити</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
