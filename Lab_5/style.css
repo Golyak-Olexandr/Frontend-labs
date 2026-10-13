@@ -1,0 +1,118 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7f9;
+    color: #333;
+    padding: 20px;
+    line-height: 1.5;
+}
+
+.container {
+    background: #ffffff;
+    padding: 25px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    max-width: 800px;
+}
+
+/* Форма валідації */
+.form-wrapper {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+#val-form {
+    flex: 1;
+    min-width: 300px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    transition: border-color 0.3s;
+}
+
+/* Виділення помилок */
+.form-group.invalid input {
+    border-color: #e74c3c;
+    background-color: #fdf2f2;
+}
+
+.error-msg {
+    display: none;
+    color: #e74c3c;
+    font-size: 12px;
+    margin-top: 4px;
+}
+
+.form-group.invalid .error-msg {
+    display: block;
+}
+
+#btn-submit {
+    padding: 12px 24px;
+    background-color: #2ec153;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#btn-submit:hover {
+    background-color: #27ae60;
+}
+
+/* Блок результату */
+.result-card {
+    flex: 1;
+    min-width: 280px;
+    padding: 20px;
+    background: #eef9f1;
+    border: 2px solid #2ecc71;
+    border-radius: 6px;
+}
+
+.result-card.hidden {
+    display: none;
+}
+
+/* Інтерактивна таблиця */
+.picker-wrapper {
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+#interactive-table {
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+#interactive-table td {
+    width: 50px;
+    height: 50px;
+    border: 2px solid #333;
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    user-select: none;
+    background-color: #ffffff;
+    transition: background-color 0.2s;
+}

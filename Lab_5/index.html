@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Голяк О. Ю. | гр. ІП-45 | ЛР №5 | Варіант 4</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Лабораторна робота №5</h1>
+    <p><strong>Виконав:</strong> Голяк Олександр Юрійович (гр. ІП-45), Варіант 4</p>
+
+    <!-- ЗАВДАННЯ 1: Форма валідації -->
+    <section class="container">
+        <h2>Завдання 1. Перевірка форми за допомогою регулярних виразів</h2>
+        <div class="form-wrapper">
+            <form id="val-form" novalidate>
+                <div class="form-group">
+                    <label for="fullname">ПІБ:</label>
+                    <input type="text" id="fullname" placeholder="Голяк Олександр Юрійович">
+                    <span class="error-msg">Невірно вказано ПІБ (наприклад: Голяк О.Ю. або Голяк Олександр Юрійович)</span>
+                </div>
+
+                <div class="form-group">
+                    <label for="idcard">ID-картка:</label>
+                    <input type="text" id="idcard" placeholder="КБ №123456">
+                    <span class="error-msg">Невірний формат ID-картки (потрібно: 2 літери, №, 6 цифр)</span>
+                </div>
+
+                <div class="form-group">
+                    <label for="faculty">Факультет:</label>
+                    <input type="text" id="faculty" placeholder="ФІОТ">
+                    <span class="error-msg">Вкажіть абревіатуру або назву факультету (наприклад: ФІОТ)</span>
+                </div>
+
+                <div class="form-group">
+                    <label for="birthdate">Дата народження:</label>
+                    <input type="text" id="birthdate" placeholder="15.05.2005">
+                    <span class="error-msg">Невірний формат дати (потрібно: ДД.ММ.РРРР)</span>
+                </div>
+
+                <div class="form-group">
+                    <label for="address">Адреса проживання:</label>
+                    <input type="text" id="address" placeholder="м. Житомир">
+                    <span class="error-msg">Невірний формат адреси (потрібно: м. НазваМіста)</span>
+                </div>
+
+                <button type="submit" id="btn-submit">Підтвердити</button>
+            </form>
+
+            <!-- Блок для виводу введених даних -->
+            <div id="result-box" class="result-card hidden">
+                <h3>Введені дані:</h3>
+                <p><strong>ПІБ:</strong> <span id="res-fullname"></span></p>
+                <p><strong>ID-картка:</strong> <span id="res-idcard"></span></p>
+                <p><strong>Факультет:</strong> <span id="res-faculty"></span></p>
+                <p><strong>Дата народження:</strong> <span id="res-birthdate"></span></p>
+                <p><strong>Адреса:</strong> <span id="res-address"></span></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ЗАВДАННЯ 2: Інтерактивна таблиця 6х6 -->
+    <section class="container">
+        <h2>Завдання 2. Таблиця 6х6 та робота з подіями (Варіант 4)</h2>
+        <p><em>Інструкція: Наведіть курсор на комірку №4 для випадкового кольору, зробіть 1 клік для зафарбовування обраним кольором, або 2 кліки (dblclick) для зафарбовування всієї побічної діагоналі.</em></p>
+        
+        <div class="picker-wrapper">
+            <label for="color-picker">Оберіть колір з палітри: </label>
+            <input type="color" id="color-picker" value="#3498db">
+        </div>
+
+        <table id="interactive-table">
+            <!-- Генерується через JS (36 клітинок) -->
+        </table>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
