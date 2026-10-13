@@ -42,15 +42,13 @@ document.addEventListener("DOMContentLoaded", () => {
     // ЗАВДАННЯ 2: Керування зображенням (4 кнопки)
     // ==========================================
 
-    const imgWrapper = document.getElementById("img-paragraph");
-    let cityImg = document.getElementById("city-image");
+    const imgWrapper = document.getElementById("image-paragraph");
 
     const btnAdd = document.getElementById("btn-add");
     const btnIncrease = document.getElementById("btn-increase");
     const btnDecrease = document.getElementById("btn-decrease");
     const btnDelete = document.getElementById("btn-delete");
 
-    // Збереження початкового стану / посилань для відновлення
     const imageSrc = "zhytomyr.jpg";
     const imageAlt = "Підвісний міст у Житомирі";
     const imageHref = "https://zt-rada.gov.ua";
