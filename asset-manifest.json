@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/Frontend-labs/lab7-app/static/css/main.a9051166.css",
+    "main.js": "/Frontend-labs/lab7-app/static/js/main.91587574.js",
+    "static/js/453.b52777bb.chunk.js": "/Frontend-labs/lab7-app/static/js/453.b52777bb.chunk.js",
+    "static/media/zhytomyr.jpg": "/Frontend-labs/lab7-app/static/media/zhytomyr.ab9fa48e986c7df05ac6.jpg",
+    "index.html": "/Frontend-labs/lab7-app/index.html",
+    "main.a9051166.css.map": "/Frontend-labs/lab7-app/static/css/main.a9051166.css.map",
+    "main.91587574.js.map": "/Frontend-labs/lab7-app/static/js/main.91587574.js.map",
+    "453.b52777bb.chunk.js.map": "/Frontend-labs/lab7-app/static/js/453.b52777bb.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a9051166.css",
+    "static/js/main.91587574.js"
+  ]
+}
