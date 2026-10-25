@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "./static/css/main.a9051166.css",
+    "main.js": "./static/js/main.e6b32e4d.js",
+    "static/js/453.b52777bb.chunk.js": "./static/js/453.b52777bb.chunk.js",
+    "static/media/zhytomyr.jpg": "./static/media/zhytomyr.ab9fa48e986c7df05ac6.jpg",
+    "index.html": "./index.html",
+    "main.a9051166.css.map": "./static/css/main.a9051166.css.map",
+    "main.e6b32e4d.js.map": "./static/js/main.e6b32e4d.js.map",
+    "453.b52777bb.chunk.js.map": "./static/js/453.b52777bb.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a9051166.css",
+    "static/js/main.e6b32e4d.js"
+  ]
+}
